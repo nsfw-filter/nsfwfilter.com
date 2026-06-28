@@ -1,4 +1,4 @@
-# nsfw-filter.com
+# nsfwfilter.com
 
 Website for [NSFW Filter](https://github.com/nsfw-filter/nsfw-filter), the free, open source and privacy-focused browser extension to block "not safe for work" content.
 
