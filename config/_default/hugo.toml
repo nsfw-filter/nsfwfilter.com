@@ -1,4 +1,4 @@
-baseURL = "https://nsfw-filter.com"
+baseURL = "https://nsfwfilter.com"
 title = "NSFW Filter - Block NSFW content using AI"
 theme = "bigspring-hugo"
 timeZone = "America/New_York"

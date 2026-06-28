@@ -42,7 +42,7 @@ image = "images/logo.svg"                           # this image will be used as
 
 [plausible]
 enable = true
-domain = "nsfw-filter.com"
+domain = "nsfwfilter.com"
 
 # site verifications
 [site_verification]
