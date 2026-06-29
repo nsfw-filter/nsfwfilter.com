@@ -20,14 +20,14 @@
                   {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-circle" "Command" "Fill" "Size" "30x30") }}
                 </a>
                 {{ else }}
-                <i class="far fa-user-circle position-relative" style="font-size:26px;top:2px"></i>
+                {{ partial "lucide" (dict "name" "circle-user" "size" "26") }}
                 {{ end }}
               </div>
               <div class="user-info me-3">
                 <p class="fw-500 mb-0"><span class="mx-1">by</span>{{if .Title}}<a class="text-dark" href="{{.RelPermalink}}">{{ .Title }}</a>{{else}}<span class="text-muted">Admin</span> {{end}}</p>
               </div>
               {{end}}
-              <div class="fw-500"><i class="far fa-calendar-alt text-dark me-1"></i> {{ time.Format ":date_long" .PublishDate }}</div>
+              <div class="fw-500">{{ partial "lucide" (dict "name" "calendar" "size" "16" "class" "text-dark me-1 align-middle") }} {{ time.Format ":date_long" .PublishDate }}</div>
             </div>
 
             <h1 class="h1 mb-3"><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h1>
@@ -51,14 +51,14 @@
                   {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-circle" "Command" "Fill" "Size" "30x30") }}
                 </a>
                 {{ else }}
-                <i class="far fa-user-circle position-relative" style="font-size:26px;top:2px"></i>
+                {{ partial "lucide" (dict "name" "circle-user" "size" "26") }}
                 {{ end }}
               </div>
               <div class="user-info me-3">
                 <p class="fw-500 mb-0"><span class="mx-1">by</span>{{if .Title}}<a class="text-dark" href="{{.RelPermalink}}">{{ .Title }}</a>{{else}}<span class="text-muted">Admin</span> {{end}}</p>
               </div>
               {{end}}
-              <div class="fw-500"><i class="far fa-calendar-alt text-dark me-1"></i> {{ time.Format ":date_long" .PublishDate }}</div>
+              <div class="fw-500">{{ partial "lucide" (dict "name" "calendar" "size" "16" "class" "text-dark me-1 align-middle") }} {{ time.Format ":date_long" .PublishDate }}</div>
             </div>
 
             <h3 class="h5"><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h3>

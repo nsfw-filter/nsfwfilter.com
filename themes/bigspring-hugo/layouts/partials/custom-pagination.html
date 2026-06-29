@@ -14,7 +14,7 @@
     <!-- Previous page. -->
     {{ if $paginator.HasPrev }}
     <li class="page-item"><a class="page-link arrow" href="{{ $paginator.Prev.URL }}" aria-label="Pagination Arrow">
-      <i class="fas fa-angle-left"></i>
+      {{ partial "lucide" (dict "name" "chevron-left" "size" "20") }}
     </a></li>
     {{ end }}
     <!-- Page numbers. -->
@@ -58,7 +58,7 @@
     <!-- Next page. -->
     {{ if $paginator.HasNext }}
     <li class="page-item"><a class="page-link arrow" href="{{ $paginator.Next.URL }}" aria-label="Pagination Arrow">
-      <i class="fas fa-angle-right"></i>
+      {{ partial "lucide" (dict "name" "chevron-right" "size" "20") }}
     </a></li>
     {{ end }}
   </ul>

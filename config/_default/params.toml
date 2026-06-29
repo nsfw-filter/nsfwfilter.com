@@ -31,7 +31,7 @@ preloader = "" # use jpg, png, svg or gif format. example - "images/preloader.gi
 [navigation_button]
 enable = true
 label = "Support on Patreon"
-icon = "fa-brands fa-patreon"
+icon = "heart"
 link = "https://www.patreon.com/nsfwfilter"
 
 [metadata]
@@ -58,15 +58,15 @@ button = "I Accept"
 
 [[social]]
 title = "github"
-icon = "fa-brands fa-github"
+icon = "star"
 link = "https://github.com/nsfw-filter/nsfw-filter"
 
 [[social]]
 title = "patreon"
-icon = "fa-brands fa-patreon"
+icon = "heart"
 link = "https://www.patreon.com/nsfwfilter"
 
 [[social]]
 title = "chrome"
-icon = "fa-brands fa-chrome"
+icon = "download"
 link = "https://chrome.google.com/webstore/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"

@@ -37,14 +37,6 @@ font_icon = "Font Awesome 6 Free"
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/swiper/swiper-bundle.css"
-[[params.plugins.css]]
-link = "plugins/font-awesome/v6/brands.css"
-[[params.plugins.css]]
-link = "plugins/font-awesome/v6/solid.css"
-[[params.plugins.css]]
-link = "plugins/font-awesome/v6/regular.css"
-[[params.plugins.css]]
-link = "plugins/font-awesome/v6/icons.css"
 # [[params.plugins.css]]
 # link = "plugins/glightbox/glightbox.css"
 

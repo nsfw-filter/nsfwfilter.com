@@ -4,7 +4,7 @@ banner:
   image : "images/demo.png"
   content : "NSFW Filter is a free and open source browser extension that hides not-safe-for-work images before you see them. It runs entirely on your device."
   button:
-    icon : "fa-brands fa-chrome"
+    icon : "download"
     enable : true
     label : "Add to Chrome"
     link : "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"
@@ -12,17 +12,17 @@ banner:
 fun_facts:
   enable: true
   fact_item:
-  - icon: "fa-solid fa-download"
+  - icon: "download"
     counter: "2000"
     counter_suffix: "+"
     content: "users on the Chrome Web Store"
 
-  - icon: "fa-solid fa-star"
+  - icon: "star"
     counter: "61"
     counter_suffix: ""
     content: "Chrome Web Store reviews"
 
-  - icon: "fa-solid fa-shield-halved"
+  - icon: "shield-half"
     counter: "100"
     counter_suffix: "%"
     content: "runs on your device"
@@ -37,19 +37,19 @@ feature:
     link : ""
   feature_item:
   - name : "On-device AI"
-    icon : "fa-solid fa-microchip"
+    icon : "cpu"
     content : "A neural network classifies every image right in your browser."
 
   - name : "No lag"
-    icon : "fa-solid fa-gauge-simple-high"
+    icon : "gauge"
     content : "Filtering happens locally, so pages stay fast."
 
   - name : "Private by design"
-    icon : "fa-solid fa-lock"
+    icon : "lock"
     content : "Nothing you browse ever leaves your device."
 
   - name : "Open source"
-    icon : "fa-brands fa-github"
+    icon : "code"
     content : "Free to use and free to inspect, on GitHub."
 
 testimonials:
@@ -72,7 +72,7 @@ call_to_action:
   title : "Try it yourself"
   content : "Add NSFW Filter to Chrome and see how it works on your own browsing. Free and open source."
   button:
-    icon : "fa-brands fa-chrome"
+    icon : "download"
     enable : true
     label : "Add to Chrome"
     link : "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"

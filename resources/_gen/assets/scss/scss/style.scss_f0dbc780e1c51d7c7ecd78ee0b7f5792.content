@@ -8199,18 +8199,18 @@ body.dark {
     color: #2b3641;
     border: 0;
     transition: 0.3s ease; }
-    .navigation .navbar-light .navbar-toggler[aria-expanded="true"] .fa-bars {
+    .navigation .navbar-light .navbar-toggler[aria-expanded="true"] .lucide-menu {
       display: none; }
-    .navigation .navbar-light .navbar-toggler[aria-expanded="true"] .fa-xmark {
+    .navigation .navbar-light .navbar-toggler[aria-expanded="true"] .lucide-x {
       display: block; }
-    .navigation .navbar-light .navbar-toggler .fa-xmark {
+    .navigation .navbar-light .navbar-toggler .lucide-x {
       display: none; }
     .navigation .navbar-light .navbar-toggler:focus {
       box-shadow: none; }
     .navigation .navbar-light .navbar-toggler:hover {
       color: #6366f1; }
-  .navigation .navbar-toggler i {
-    font-size: 23px; }
+  .navigation .navbar-toggler svg {
+    display: block; }
   .navigation .nav-item {
     font-size: 1rem; }
     .navigation .nav-item .nav-link {

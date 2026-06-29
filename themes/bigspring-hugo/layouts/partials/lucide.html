@@ -1,0 +1,11 @@
+{{- /* Inline a lucide icon by name. Same icon set the extension uses (lucide-react),
+       kept local so the site pulls no icon CDN. SVGs live in assets/lucide/<name>.svg
+       as inner markup; this wrapper matches lucide's default render attributes. */ -}}
+{{- $name := .name -}}
+{{- $size := .size | default "24" -}}
+{{- $class := .class | default "" -}}
+{{- with resources.Get (printf "lucide/%s.svg" $name) -}}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ $size }}" height="{{ $size }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-{{ $name }}{{ with $class }} {{ . }}{{ end }}" aria-hidden="true">{{ .Content | safeHTML }}</svg>
+{{- else -}}
+{{- warnf "lucide: no icon named %q" $name -}}
+{{- end -}}

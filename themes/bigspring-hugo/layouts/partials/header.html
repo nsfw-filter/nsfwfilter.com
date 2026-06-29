@@ -11,8 +11,8 @@
       <div class="d-flex align-items-center">
         <!-- navbar toggler -->
         <button aria-label="navbar toggler" class="navbar-toggler border-0 h4 mb-0" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#navigation">
-          <i class="fas fa-bars"></i>
-          <i class="fa-solid fa-xmark"></i>
+          {{ partial "lucide" (dict "name" "menu" "size" "26") }}
+          {{ partial "lucide" (dict "name" "x" "size" "26") }}
         </button>
 
         {{ if site.Params.theme_switcher }}
@@ -71,7 +71,7 @@
         {{ if site.Params.navigation_button.enable }}
         <!-- navigation btn -->
         <a href="{{ site.Params.navigation_button.link | relLangURL }}"
-          class="btn btn-sm btn-primary ms-lg-4 mt-2 mt-lg-0"><i class="icon {{site.Params.navigation_button.icon}} me-2"></i>{{ site.Params.navigation_button.label }}</a>
+          class="btn btn-sm btn-primary ms-lg-4 mt-2 mt-lg-0">{{ partial "lucide" (dict "name" site.Params.navigation_button.icon "size" "16" "class" "me-2 align-middle") }}{{ site.Params.navigation_button.label }}</a>
         {{ end }}
 
         {{ if site.Params.theme_switcher }}

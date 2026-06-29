@@ -17,7 +17,7 @@
               {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-circle" "Command" "Fill" "Size" "30x30") }}
             </a>
             {{ else }}
-            <i class="far fa-user-circle position-relative" style="font-size:26px;top:2px"></i>
+            {{ partial "lucide" (dict "name" "circle-user" "size" "26") }}
             {{ end }}
           </div>
           <div class="user-info">
@@ -26,7 +26,7 @@
         </div>
         {{end}}
         
-        <span class="text-muted fw-500"><i class="far fa-calendar-alt text-dark me-1"></i> {{ time.Format ":date_long" .PublishDate }} <span class="mx-1 text-dark-50 fw-500">|</span> <i class="far fa-clock text-dark me-1"></i> {{.ReadingTime}} min Read</span>
+        <span class="text-muted fw-500">{{ partial "lucide" (dict "name" "calendar" "size" "16" "class" "text-dark me-1 align-middle") }} {{ time.Format ":date_long" .PublishDate }} <span class="mx-1 text-dark-50 fw-500">|</span> {{ partial "lucide" (dict "name" "clock" "size" "16" "class" "text-dark me-1 align-middle") }} {{.ReadingTime}} min Read</span>
 
         <h1 class="h1 my-3">{{ .Title }}</h1>
 
@@ -39,7 +39,7 @@
             {{ if .Params.image }}
             {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-circle" "Command" "Fill" "Size" "80x80") }}
             {{ else }}
-            <i class="far fa-user-circle mb-1" style="font-size:82px"></i>
+            {{ partial "lucide" (dict "name" "circle-user" "size" "82" "class" "mb-1") }}
             {{ end }}
           </div>
           <div>
@@ -47,7 +47,7 @@
             <div class="content">{{ .Content | truncate 135}}</div>
             <ul class="list-inline social-icons justify-content-start mt-3 mb-0">
               {{ range .Params.social }}
-              <li class="list-inline-item"><a class="d-inline-block" href="{{ .link | safeURL}}"><i class="{{ .icon }}"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block" href="{{ .link | safeURL}}">{{ partial "lucide" (dict "name" .icon "size" "20") }}</a></li>
               {{ end }}
             </ul>
           </div>

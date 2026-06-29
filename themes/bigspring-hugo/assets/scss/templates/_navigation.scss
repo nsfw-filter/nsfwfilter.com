@@ -46,16 +46,16 @@
     transition: 0.3s ease;
 
     &[aria-expanded="true"] {
-      .fa-bars {
+      .lucide-menu {
         display: none;
       }
 
-      .fa-xmark {
+      .lucide-x {
         display: block;
       }
     }
 
-    .fa-xmark {
+    .lucide-x {
       display: none;
     }
 
@@ -68,8 +68,8 @@
     }
   }
 
-  .navbar-toggler i {
-    font-size: 23px;
+  .navbar-toggler svg {
+    display: block;
   }
 
   .nav-item {
