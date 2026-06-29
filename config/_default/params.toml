@@ -15,14 +15,14 @@ mainSections = ["news"]
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
 custom_script = ""
 
-# copyright
+# copyright (the year is rendered dynamically in the footer partial)
 theme_copyright = true
-copyright = "Copyright © (2020-2023) by NSFW Filter Maintainers"
+copyright = "Free and open source, released under the MIT License."
 
-footer_menu_left = "Directory"
-footer_menu_middle = "Directory"
-footer_menu_right = "Directory"
-footer_content = "NSFW Filter is a free, open source, and privacy-focused browser extension to block “not safe for work” content."
+footer_menu_left = "Product"
+footer_menu_middle = "Open source"
+footer_menu_right = "Support"
+footer_content = "A free, open source browser extension that blocks not-safe-for-work images. Everything runs on your own device, so nothing you browse ever leaves it."
 
 [preloader]
 enable = false
@@ -38,7 +38,7 @@ link = "https://www.patreon.com/nsfwfilter"
 keywords = ["NSFW", "Filter", "Browser extension"]
 description = "NSFW Filter is a free, open source, and privacy-focused browser extension to block “not safe for work” content."
 author = "Navendu Pottekkat"
-image = "images/logo.svg"                           # this image will be used as fallback if a page has no image of its own
+image = "images/demo.png"                           # this image will be used as fallback if a page has no image of its own
 
 [plausible]
 enable = true

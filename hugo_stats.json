@@ -2,6 +2,7 @@
   "htmlElements": {
     "tags": [
       "a",
+      "base",
       "body",
       "button",
       "div",
@@ -80,12 +81,12 @@
       "fa-chrome",
       "fa-clock",
       "fa-download",
-      "fa-filter",
       "fa-gauge-simple-high",
       "fa-github",
       "fa-lock",
       "fa-microchip",
       "fa-patreon",
+      "fa-shield-halved",
       "fa-solid",
       "fa-star",
       "fa-xmark",
@@ -171,11 +172,17 @@
       "w-100"
     ],
     "ids": [
+      "a-fresh-look",
       "bug-fixes",
+      "caption-NSFW Filter v3.0.0 running in Chrome",
       "caption-New NSFW Filter logo",
       "caption-New and improved NSFW Filter popup with whitelist feature",
+      "fewer-flashes",
+      "get-it",
       "navigation",
       "new-look",
+      "rebuilt-for-manifest-v3",
+      "still-completely-on-device",
       "whats-next",
       "whitelist-websites"
     ]

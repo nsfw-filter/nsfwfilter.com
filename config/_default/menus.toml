@@ -9,17 +9,45 @@ name = "News"
 url = "news/"
 weight = 2
 
+# Product
 [[footer_left]]
 name = "Home"
 url = "/"
 weight = 1
 
 [[footer_left]]
-name = "News"
-url = "news/"
+name = "Add to Chrome"
+url = "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"
 weight = 2
 
 [[footer_left]]
-name = "License"
+name = "News"
+url = "news/"
+weight = 3
+
+# Open source
+[[footer_middle]]
+name = "Source code"
+url = "https://github.com/nsfw-filter/nsfw-filter"
+weight = 1
+
+[[footer_middle]]
+name = "Report an issue"
+url = "https://github.com/nsfw-filter/nsfw-filter/issues"
+weight = 2
+
+[[footer_middle]]
+name = "MIT License"
 url = "https://github.com/nsfw-filter/nsfw-filter/blob/master/LICENSE"
 weight = 3
+
+# Support
+[[footer_right]]
+name = "Sponsor on Patreon"
+url = "https://www.patreon.com/nsfwfilter"
+weight = 1
+
+[[footer_right]]
+name = "Contact"
+url = "mailto:mailnsfwfilter@gmail.com"
+weight = 2

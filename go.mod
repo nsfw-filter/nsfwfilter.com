@@ -1,4 +1,4 @@
-module examplesite.com
+module github.com/nsfw-filter/nsfwfilter.com
 
 go 1.20
 
