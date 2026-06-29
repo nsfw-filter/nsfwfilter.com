@@ -37,7 +37,7 @@ url = "https://github.com/nsfw-filter/nsfw-filter/issues"
 weight = 2
 
 [[footer_middle]]
-name = "MIT License"
+name = "GPL-3.0 License"
 url = "https://github.com/nsfw-filter/nsfw-filter/blob/master/LICENSE"
 weight = 3
 

@@ -17,7 +17,7 @@ custom_script = ""
 
 # copyright (the year is rendered dynamically in the footer partial)
 theme_copyright = true
-copyright = "Free and open source, released under the MIT License."
+copyright = "Free and open source, released under the GPL-3.0 License."
 
 footer_menu_left = "Product"
 footer_menu_middle = "Open source"
