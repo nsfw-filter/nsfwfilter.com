@@ -20,8 +20,10 @@ $dark: {{.dark | default "#1b2229"}};
 // Font Variables
 $font-size: {{.font_size | default "16px"}};
 $font-scale: {{.font_scale | default "1.25"}};
-$font-primary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_primary | default "Lato") "+" " "}}', {{.font_primary_type | default "sans-serif"}};
-$font-secondary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_secondary | default "Lato") "+" " "}}', {{.font_secondary_type | default "sans-serif"}};
+// Match the extension popup: a system font stack, no web fonts, nothing fetched
+// at runtime. Keeps the site fully local like the extension it ships.
+$font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-secondary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 $font-icon: '{{.font_icon | default "Font Awesome 6 Free"}}';
 {{ end }}
 

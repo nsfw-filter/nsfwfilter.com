@@ -28,19 +28,8 @@
 <script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $scripts.Data.Integrity }}"{{end}} type="application/javascript">{{$scripts.Content | safeJS}}</script>
 
 
-<!-- font family -->
-{{$pf:= site.Params.variables.font_primary}}
-{{$sf:= site.Params.variables.font_secondary}}
-<script type="application/javascript">
-  WebFont.load({
-    google: {
-      api: 'https://fonts.googleapis.com/css2',
-      families: ['{{$pf | default `Lato:wght@400`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{. | default `Lato:wght@400`}}&display=swap'{{end}}],
-      version: 2
-    },
-    active: () => {sessionStorage.fontsLoaded = true}
-  });
-</script>
+<!-- Fonts are a system stack now (see style.scss), so nothing is fetched from
+     Google Fonts at runtime. -->
 
 <!-- progressive web app -->
 {{ partialCached "pwa.html" . }}

@@ -1,20 +1,20 @@
 [params.variables]
-color_primary = "#0AA8A7"
-color_secondary = "#376f92"
+color_primary = "#6366f1"
+color_secondary = "#4f46e5"
 body_color = "#fff"
-text_color = "#777"
-text_dark = "#222"
-text_light = "#959595"
-border_color = "#ECECEC"
+text_color = "#71717f"
+text_dark = "#1d1d22"
+text_light = "#a1a1ac"
+border_color = "#ececf3"
 dark_body_color = "#1E262C"
-dark_text_color = "#cbcbcb"
-dark_text_light = "#959595"
+dark_text_color = "#cbd2da"
+dark_text_light = "#9aa4b2"
 dark_text_dark = "#fff"
-dark_border_color = "#4e4e4e"
+dark_border_color = "#2c3742"
 black = "#101418"
 white = "#fff"
-light = "#EDF6F5"
-dark = "#1b2229"
+light = "#f6f6fb"
+dark = "#232d35"
 
 font_size = "16px"
 
@@ -51,8 +51,6 @@ link = "plugins/font-awesome/v6/icons.css"
 # JS Plugins
 [[params.plugins.js]]
 link = "plugins/swiper/swiper-bundle.js"
-[[params.plugins.js]]
-link = "plugins/webfont/webfont-loader-2.js"
 [[params.plugins.js]]
 link = "plugins/cookie.js"
 [[params.plugins.js]]
