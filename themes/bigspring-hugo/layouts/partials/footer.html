@@ -42,7 +42,7 @@
               {{ with site.Params.social }}
               <ul class="list-inline social-icons">
                 {{ range . }}
-                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}">{{ partial "lucide" (dict "name" .icon "size" "20") }}</a></li>
+                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}">{{ partial "brand" (dict "name" .icon "size" "20") }}</a></li>
                 {{ end }}
               </ul>
               {{ end }}

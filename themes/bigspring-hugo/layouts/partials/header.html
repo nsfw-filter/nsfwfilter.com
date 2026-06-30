@@ -71,7 +71,7 @@
         {{ if site.Params.navigation_button.enable }}
         <!-- navigation btn -->
         <a href="{{ site.Params.navigation_button.link | relLangURL }}"
-          class="btn btn-sm btn-primary ms-lg-4 mt-2 mt-lg-0">{{ partial "lucide" (dict "name" site.Params.navigation_button.icon "size" "16" "class" "me-2 align-middle") }}{{ site.Params.navigation_button.label }}</a>
+          class="btn btn-sm btn-primary ms-lg-4 mt-2 mt-lg-0">{{ partial "brand" (dict "name" site.Params.navigation_button.icon "size" "16" "class" "me-2 align-middle") }}{{ site.Params.navigation_button.label }}</a>
         {{ end }}
 
         {{ if site.Params.theme_switcher }}

@@ -1,0 +1,12 @@
+{{- /* Inline a brand logo by name. Lucide drops brand marks (trademark policy),
+       so these come from Simple Icons (CC0), vendored as local SVGs in
+       assets/brands/<name>.svg so the site pulls no icon CDN. Brand glyphs are
+       solid, so this wrapper fills with currentColor instead of stroking. */ -}}
+{{- $name := .name -}}
+{{- $size := .size | default "24" -}}
+{{- $class := .class | default "" -}}
+{{- with resources.Get (printf "brands/%s.svg" $name) -}}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ $size }}" height="{{ $size }}" viewBox="0 0 24 24" fill="currentColor" class="brand brand-{{ $name }}{{ with $class }} {{ . }}{{ end }}" aria-hidden="true">{{ .Content | safeHTML }}</svg>
+{{- else -}}
+{{- warnf "brand: no icon named %q" $name -}}
+{{- end -}}
