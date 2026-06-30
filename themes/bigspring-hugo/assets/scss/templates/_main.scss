@@ -84,14 +84,17 @@
   }
 
   a {
+    // Centre an inline SVG (lucide) in the circle. line-height + text-align
+    // only centre a font glyph; an inline <svg> sits on the baseline and rides
+    // high, so flex-centre both axes instead.
+    align-items: center;
     color: $color-primary;
-    text-align: center;
+    display: inline-flex;
     height: 40px;
+    justify-content: center;
     width: 40px;
-    line-height: 40px;
     border: 1px solid $color-primary;
     border-radius: 50%;
-    display: block;
 
     &:hover {
       color: $white;
