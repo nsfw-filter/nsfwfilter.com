@@ -11,7 +11,7 @@
         <div class="mb-5 mt-4">
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-outline-primary m-2">{{ partial "lucide" (dict "name" .icon "size" "18" "class" "me-2 align-middle") }}{{ .label }}</a>
+          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-outline-primary m-2">{{ partial "brand" (dict "name" .icon "size" "18" "class" "me-2 align-middle") }}{{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -255,7 +255,7 @@
         {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary">{{ partial "lucide" (dict "name" .icon "size" "18" "class" "me-2 align-middle") }}{{ .label }}</a>
+        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary">{{ partial "brand" (dict "name" .icon "size" "18" "class" "me-2 align-middle") }}{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>

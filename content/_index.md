@@ -4,7 +4,7 @@ banner:
   image : "images/demo.png"
   content : "NSFW Filter is a free and open source browser extension that hides not-safe-for-work images before you see them. It runs entirely on your device."
   button:
-    icon : "download"
+    icon : "chrome"
     enable : true
     label : "Add to Chrome"
     link : "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"
@@ -72,7 +72,7 @@ call_to_action:
   title : "Try it yourself"
   content : "Add NSFW Filter to Chrome and see how it works on your own browsing. Free and open source."
   button:
-    icon : "download"
+    icon : "chrome"
     enable : true
     label : "Add to Chrome"
     link : "https://chromewebstore.google.com/detail/nsfw-filter/kmgagnlkckiamnenbpigfaljmanlbbhh"
